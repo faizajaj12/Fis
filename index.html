@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyfis App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        .app-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .balance-card {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .balance-card p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .balance-card .balance {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            padding: 20px;
+        }
+
+        .menu-section h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .grid-menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            padding: 15px;
+            text-decoration: none;
+            color: #3498db;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .menu-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+
+        .menu-item span {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer-nav {
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item img {
+            width: 25px;
+            height: 25px;
+            margin-bottom: 5px;
+        }
+
+        .nav-item span {
+            font-size: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Gaya untuk tautan WhatsApp */
+        .whatsapp-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #25D366; /* Warna hijau WhatsApp */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #128C7E; /* Warna hijau lebih gelap */
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .grid-menu {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>HyRizz</h1>
+        </div>
+
+        <div class="balance-card">
+            <p>Saldo Tersedia</p>
+            <div class="balance">Rp 0</div>
+            <p>ID: UJ6o</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>Menu Utama</h2>
+            <div class="grid-menu">
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Isi" alt="Isi Saldo">
+                    <span>Isi Saldo</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Rwy" alt="Riwayat">
+                    <span>Riwayat</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Trx" alt="Transaksi">
+                    <span>Transaksi</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=QRIS" alt="QRIS">
+                    <span>QRIS</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Menu PPOB</h2>
+            <div class="grid-menu">
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Pulsa" alt="Pulsa">
+                    <span>Pulsa</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Data" alt="Paket Data">
+                    <span>Paket Data</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=PLN" alt="PLN">
+                    <span>PLN</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=E-Wallet" alt="E-Wallet">
+                    <span>E-Wallet</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Menu JB</h2>
+            <div class="grid-menu">
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=P.Trans" alt="Pulsa Transfer">
+                    <span>Pulsa Transfer</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Game" alt="Game">
+                    <span>Game</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Voucher" alt="Voucher">
+                    <span>Voucher</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://via.placeholder.com/40/3498db/FFFFFF?text=Lain" alt="Lainnya">
+                    <span>Lainnya</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <a href="#" class="nav-item">
+                <img src="https://via.placeholder.com/25/FFFFFF/3498db?text=Home" alt="Home">
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="https://via.placeholder.com/25/FFFFFF/3498db?text=Promo" alt="Promo">
+                <span>Promo</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="https://via.placeholder.com/25/FFFFFF/3498db?text=Info" alt="Informasi">
+                <span>Informasi</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="https://via.placeholder.com/25/FFFFFF/3498db?text=DP" alt="DP">
+                <span>DP X HY</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="https://via.placeholder.com/25/FFFFFF/3498db?text=Akun" alt="Akun">
+                <span>Akun</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Ada kendala atau pertanyaan?</p>
+            <a href="https://wa.me/6283172916537?text=Halo, saya mengalami kendala dengan aplikasi Anda." class="whatsapp-link" target="_blank">Hubungi Kami via WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>
